@@ -9,8 +9,21 @@
         padding: 20px;
         height: 100vh;
       }
+      iframe{
+        width: 100%;
+         background-color: #f9d9e7;
+         margin: 0;
+         border: none;
+      }
+      #nav{
+        width: 100%;
+        text-align: center;
+        opacity: 90%;
+      }
+
       h1 {
         color: #333;
+        text-align: center;
       }
       form {
         background: #fff;
