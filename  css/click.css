@@ -1,20 +1,62 @@
-/* body{
-    width: 100%;
-    height: 100vh;
-    background-color: red;
+/* body {
+  display: flex;
+  flex-direction: row;
 } */
-.btns-box{
-    width: 800px;
-    height: 650px;
-    background-color: aliceblue;
-    display: flex;
+.btns-box {
+  width: 800px;
+  height: 650px;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  margin: 20px;
+  border-radius: 3%;
+  padding: 10px;
 }
-.btns{
-        width: 30%;
-        /* height: 30%; */
-        background-color: rgb(69, 114, 46);
-        margin:5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+.btns {
+  width: 30%;
+  height: 30%;
+  border-radius: 5%;
+  background-color: rgb(51 120 173);
+  margin: 10px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.btns:active {
+  transform: scale(0.9);
+  opacity: 80%;
+}
+.heart-images {
+  position: fixed;
+  width: 10px;
+  top: 320px;
+  right: 320px;
+}
+.heart-images img {
+  width: 100px;
+  margin: 10px;
+}
+.score-photo {
+  position: fixed;
+  width: 400px;
+  height: 520px;
+  top: 230px;
+  left: 50px;
+}
+#score {
+  width: 100px;
+  font-size: 90px;
+  font-weight: bold;
+  position: fixed;
+  top: 355px;
+  left: 230px;
+  color: rgb(8 59 94);
+}
+button {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
 }
