@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: row;
 } */
+body {
+  margin: 0%;
+}
 .btns-box {
   width: 800px;
   height: 650px;
@@ -12,6 +15,9 @@
   margin: 20px;
   border-radius: 3%;
   padding: 10px;
+}
+.game-over {
+  display: none;
 }
 .btns {
   width: 30%;
@@ -54,9 +60,63 @@
   left: 230px;
   color: rgb(8 59 94);
 }
-button {
+#start-game {
   cursor: pointer;
-  width: 100px;
-  height: 50px;
-  font-size: 30px;
+  width: 150px;
+  height: 70px;
+  font-size: 40px;
+  margin-left: 178px;
+  margin-top: 0px;
+  border-radius: 10%;
+  /* margin-bottom: 200px; */
 }
+#start-game:hover {
+  background-color: rgb(51 120 173);
+  color: rgb(255, 255, 255);
+}
+#home {
+  cursor: pointer;
+  width: 150px;
+  height: 70px;
+  font-size: 40px;
+  margin-right: 178px;
+  margin-top: 0px;
+  float: right;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  /* color: black;
+  text-decoration: none; */
+}
+#home a {
+  text-decoration: none;
+  color: black;
+}
+#home:hover {
+  background-color: rgb(51 120 173);
+  color: rgb(255, 255, 255);
+}
+#home a:hover {
+  color: rgb(255, 255, 255);
+}
+.game-over {
+  background-image: url("../images/game-over-game.gif");
+  background-size: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+/* flex-direction: row;
+  line-height: 2;
+  text-align: center; */
+/* }
+#btns-box h1 {
+  font-size: 200px;
+}
+#btns-box h2 {
+  font-size: 50px;
+} */
