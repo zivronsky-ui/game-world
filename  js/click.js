@@ -4,12 +4,21 @@ let arrLightBtn =
   document.getElementsByClassName("btns"); /* המערך של הכפתורים  */
 let arrHeartImages = document.getElementsByClassName("heart");
 let game;
+function EndGame() {
+  document.querySelector(".game-over").style.display = "flex";
+  document.getElementById("btns-box").style.display = "none";
+
+  // document.getElementsByClassName("btns-box")[0].style.display = "none";
+}
+// document.getElementsByClassName("btns-box")[0].style.display = "none";
 
 // if (started !== true) {
 //   hearts = 3;
 // }
 
 function startGame() {
+  document.querySelector(".game-over").style.display = "none";
+  document.getElementById("btns-box").style.display = "flex";
   debugger;
   let started = true;
   score = 0;
@@ -36,7 +45,7 @@ function startGame() {
       // arrHeartImages.style.display = "none";
       console.log(game);
       clearInterval(game);
-      alert("Game Over! Your score is: " + score);
+      EndGame();
       document
         .getElementById("start-game")
         .removeEventListener("click", startGame);
@@ -57,7 +66,7 @@ function onClick(event) {
     arrHeartImages[hearts].style.display = "none";
     if (hearts === 0) {
       clearInterval(game);
-      alert("Game Over! Your score is: " + score);
+      EndGame();
     }
   }
 }
