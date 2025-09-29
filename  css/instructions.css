@@ -1,0 +1,38 @@
+#box {
+  width: 700px;
+  height: 650px;
+  background-color: aliceblue;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-self: center;
+  margin: 20px;
+  border-radius: 3%;
+  padding: 10px;
+  color: rgb(8 59 94);
+}
+#box h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+#box p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+#box #start-game {
+  padding: 2%;
+  margin-left: 40%;
+  display: inline;
+  background-color: rgb(189, 187, 187);
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10%;
+}
+#box #start-game:hover {
+  background-color: rgb(209, 209, 209);
+}
+#box #start-game a {
+  text-decoration: none;
+  color: rgb(8 59 94);
+}
