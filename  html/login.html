@@ -11,18 +11,23 @@
   <body>
     <div class="forms">
       <h1>Log in:</h1>
-      <form action="/login" method="post">
+      <form onsubmit="return checkForm()" action="./games.html">
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required /><br /><br />
+        <input type="text" id="username" name="username" required />
+        <div id="user"></div>
+        <br /><br />
+
         <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          required
-        /><br /><br />
+        <input type="password" id="password" name="password" required />
+        <div id="pass"></div>
+        <br /><br />
+        <div class="account">
+          To create an account<a href="./sign-up.html"> click here</a>
+        </div>
+        <br />
         <button type="submit">Log in</button>
       </form>
     </div>
   </body>
+  <script src="../ js/login.js" defer></script>
 </html>

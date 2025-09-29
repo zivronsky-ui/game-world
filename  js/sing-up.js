@@ -1,9 +1,11 @@
 function checkForm(){
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirm-password").value;
 
   const userError = document.getElementById("user");
   const passError = document.getElementById("pass");
+  const confirmError = document.getElementById("conf");
 
   let check = true;
 
@@ -23,6 +25,12 @@ function checkForm(){
   } else {
     passError.innerText = "";
   }
+  if (password !== confirmPassword) {
+    confirmError.innerText = "The passwords do not match";
+    check = false;
+  } else {
+    confirmError.innerText = "";
+  }
 
-  return check; // הטופס יישלח רק אם שתי הבדיקות הצליחו
+  return check; // הטופס יישלח רק אם שלושת הבדיקות הצליחו
 }
