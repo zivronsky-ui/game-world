@@ -6,15 +6,12 @@ let arrHeartImages = document.getElementsByClassName("heart");
 let game;
 function EndGame() {
   document.querySelector(".game-over").style.display = "flex";
-  document.getElementById("btns-box").style.display = "none";
-
-  // document.getElementsByClassName("btns-box")[0].style.display = "none";
+  document.getElementById("btns-box").style.display =
+    "none"; /* GAME OVER פונקציה ששמה את    */
 }
-// document.getElementsByClassName("btns-box")[0].style.display = "none";
 
-// if (started !== true) {
-//   hearts = 3;
-// }
+let time = 800;
+let sound = new Audio("/home/zivronsky1/game-world-site-111/images/sound-.mp3");
 
 function startGame() {
   document.querySelector(".game-over").style.display = "none";
@@ -23,6 +20,7 @@ function startGame() {
   let started = true;
   score = 0;
   hearts = 3;
+  time = 800;
   Array.from(arrHeartImages).forEach((heart) => {
     heart.style.display = "inline";
   });
@@ -36,8 +34,8 @@ function startGame() {
     lightTheBtn(arrLightBtn[RandomBtn]);
     setTimeout(() => {
       arrLightBtn[RandomBtn].style.backgroundColor = "";
-    }, 850);
-  }, 850);
+    }, time);
+  }, time);
   function lightTheBtn(btn) {
     /* מדליק את הכפתור, בודק אם הלבבות 0 גומר את המשחק */
     btn.style.backgroundColor = "red";
@@ -57,6 +55,15 @@ function onClick(event) {
   let btn = event.currentTarget;
   if (btn.style.backgroundColor === "red") {
     score++;
+    if (score > 3) {
+      time = time - 50;
+    }
+    if (score > 6) {
+      time = time - 50;
+    }
+    if (score > 9) {
+      time = time - 50;
+    }
     document.getElementById("score").innerText = score;
     if (score > 9) {
       document.getElementById("score").style.left = "205px";
@@ -64,6 +71,9 @@ function onClick(event) {
   } else {
     hearts--;
     arrHeartImages[hearts].style.display = "none";
+    sound.play();
+    // document.getElementById("error-sound").play();
+
     if (hearts === 0) {
       clearInterval(game);
       EndGame();

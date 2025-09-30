@@ -35,3 +35,33 @@ img:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
+
+#log-out {
+  cursor: pointer;
+  width: 150px;
+  height: 70px;
+  font-size: 35px;
+  /* margin-right: 178px; */
+  margin: 100px;
+  margin-top: -50px;
+  /* float: right; */
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  /* color: black;
+  text-decoration: none; */
+}
+#log-out a {
+  text-decoration: none;
+  color: black;
+}
+#log-out:hover {
+  background-color: rgb(51 120 173);
+  color: rgb(255, 255, 255);
+}
+#log-out a:hover {
+  color: rgb(255, 255, 255);
+}

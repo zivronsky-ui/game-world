@@ -9,6 +9,8 @@
   border-radius: 3%;
   padding: 10px;
   color: rgb(8 59 94);
+  box-shadow: 5px 5px 5px rgb(183, 221, 224);
+  margin-top: 3%;
 }
 #box h1 {
   text-align: center;

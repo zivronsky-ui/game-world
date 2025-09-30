@@ -15,6 +15,8 @@ body {
   margin: 20px;
   border-radius: 3%;
   padding: 10px;
+  margin-top: 3%;
+  box-shadow: 5px 5px 5px rgb(183, 221, 224);
 }
 .game-over {
   display: none;
