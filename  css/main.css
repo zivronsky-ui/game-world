@@ -9,16 +9,38 @@ body {
 }
 iframe {
   width: 100%;
-  background-color: #f9d9e7;
+  background-color: #f9d9e7a8;
   margin: 0;
   border: none;
-  margin-bottom: 0%;
+  margin-top: 0%;
+  background-image: none;
+  margin-bottom: 3%;
 }
 #nav {
   width: 100%;
   text-align: center;
   opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding-top: 0%;
+  padding-right: 21px;
 }
 .forms {
   margin-top: 0;
+}
+#headr {
+  background-image: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Rubik Doodle Shadow", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.logo {
+  height: 120px;
+  padding-top: 0;
+}
+#nav h1 {
+  margin-top: 20px;
 }
