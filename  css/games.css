@@ -1,0 +1,37 @@
+h1 {
+  color: rgb(16, 16, 16);
+  font-size: 40px;
+  text-align: center;
+  /* margin: 10px; */
+
+  /* font-family: "Rubik Doodle Shadow", Arial, Helvetica, sans-serif; */
+}
+.our-games {
+  background-color: aliceblue;
+  width: 400px;
+  height: 50px;
+  margin-left: 715px;
+  margin-top: 30px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px rgb(183, 221, 224);
+}
+.game-pics {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+img {
+  width: 300px;
+  height: 300px;
+  margin: 20px 30px;
+  border-radius: 10%;
+  box-shadow: 8px 8px 8px rgb(183, 221, 224);
+}
+img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
