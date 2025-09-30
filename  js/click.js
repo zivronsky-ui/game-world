@@ -4,10 +4,14 @@ let arrLightBtn =
   document.getElementsByClassName("btns"); /* המערך של הכפתורים  */
 let arrHeartImages = document.getElementsByClassName("heart");
 let game;
+let endGameSound = new Audio(
+  "/home/zivronsky1/game-world-site-111/images/end-game-sound.mp3"
+);
 function EndGame() {
   document.querySelector(".game-over").style.display = "flex";
   document.getElementById("btns-box").style.display =
     "none"; /* GAME OVER פונקציה ששמה את    */
+  endGameSound.play();
 }
 
 let time = 800;
